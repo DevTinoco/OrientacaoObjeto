@@ -14,7 +14,11 @@ public class Animais {
 		cachorro1.peso = 5.5;
 		cachorro1.tamanhoDoRabo = 5;
 		
-		System.out.println(cachorro1);
+		cachorro1.latir();
+		System.out.println("O cachorro pegou uma " + cachorro1.pegar());
+		
+		
+		System.out.println("O cachorro esta " + cachorro1.interagir(acao "carinho"));
 		
 		
 		
