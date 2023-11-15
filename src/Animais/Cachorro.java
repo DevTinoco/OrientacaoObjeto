@@ -9,13 +9,13 @@ public class Cachorro {
 	public int altura;
 	public double peso;
 	public int tamanhoDoRabo;
-	public String estadoDeEspirito;
-	
+	public String estadoDeEspirito; 
+	public String acao;
+
 	// Metodos:
 	public void comer() {
 	
-}
-	public void latir() {
+}	public void latir() {
 		System.out.println("Au Au");
 	}
 	
@@ -27,16 +27,36 @@ public class Cachorro {
 	// Estado de espirito
 	
 	public String interagir(String acao) {
-		 if (acao.equals("carinho")) {
+		
+		//switch:
+		
+		switch (acao) {
+		case "carinha" : this.estadoDeEspirito = "feliz"; break;
+		case "vai dormir" : this.estadoDeEspirito = "bravo";break;
+		case "pisar na patinha" : this.estadoDeEspirito = "triste"; break;
+		default: this.estadoDeEspirito = "neutro";
+		}
+		
+		return this.estadoDeEspirito;
+		
+/*	 if (acao.equals("carinho")) {
 			this.estadoDeEspirito = "feliz";
 		 }
 		 
-		 else {
-			 this.estadoDeEspirito = "neutro";
-			 
+		 else if (acao.equals("vai dormir!")){
+			 this.estadoDeEspirito = "Bravo"; 
 		 }
-		 
-		 return estadoDeEspirito;
+		 else if (acao.equals("pisar na patinha!")){
+			 this.estadoDeEspirito = "Triste";
+		 }
+			 else {
+		 this.estadoDeEspirito = "neutro";
+		 }
+		 return estadoDeEspirito;)*/
+	}
+	public String pegar(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
